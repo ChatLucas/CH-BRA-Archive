@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Editor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Editor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lz" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Editor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-lz" />
+			<Add option="`sdl2-config --cflags`" />
+			<Add option="`sdl2-config --libs`" />
+		</Linker>
+		<Unit filename="Imported/7z.h" />
+		<Unit filename="Imported/7zdeflate.cc" />
+		<Unit filename="Imported/7zlzma.cc" />
+		<Unit filename="Imported/AriBitCoder.cc" />
+		<Unit filename="Imported/AriBitCoder.h" />
+		<Unit filename="Imported/AriConst.h" />
+		<Unit filename="Imported/AriPrice.h" />
+		<Unit filename="Imported/BinTree.h" />
+		<Unit filename="Imported/BinTree2.h" />
+		<Unit filename="Imported/BinTree2Main.h" />
+		<Unit filename="Imported/BinTree3.h" />
+		<Unit filename="Imported/BinTree3Main.h" />
+		<Unit filename="Imported/BinTree3Z.h" />
+		<Unit filename="Imported/BinTree3ZMain.h" />
+		<Unit filename="Imported/BinTree4.h" />
+		<Unit filename="Imported/BinTree4Main.h" />
+		<Unit filename="Imported/BinTree4b.h" />
+		<Unit filename="Imported/BinTree4bMain.h" />
+		<Unit filename="Imported/BinTreeMF.h" />
+		<Unit filename="Imported/BinTreeMFMain.h" />
+		<Unit filename="Imported/BinTreeMain.h" />
+		<Unit filename="Imported/BitTreeCoder.h" />
+		<Unit filename="Imported/CRC.cc" />
+		<Unit filename="Imported/CRC.h" />
+		<Unit filename="Imported/Const.h" />
+		<Unit filename="Imported/DeflateDecoder.cc" />
+		<Unit filename="Imported/DeflateDecoder.h" />
+		<Unit filename="Imported/DeflateEncoder.cc" />
+		<Unit filename="Imported/DeflateEncoder.h" />
+		<Unit filename="Imported/HuffmanDecoder.h" />
+		<Unit filename="Imported/HuffmanEncoder.cc" />
+		<Unit filename="Imported/HuffmanEncoder.h" />
+		<Unit filename="Imported/IInOutStreams.cc" />
+		<Unit filename="Imported/IInOutStreams.h" />
+		<Unit filename="Imported/InByte.cc" />
+		<Unit filename="Imported/InByte.h" />
+		<Unit filename="Imported/LSBFDecoder.cc" />
+		<Unit filename="Imported/LSBFDecoder.h" />
+		<Unit filename="Imported/LSBFEncoder.cc" />
+		<Unit filename="Imported/LSBFEncoder.h" />
+		<Unit filename="Imported/LZMA.cc" />
+		<Unit filename="Imported/LZMA.h" />
+		<Unit filename="Imported/LZMADecoder.cc" />
+		<Unit filename="Imported/LZMADecoder.h" />
+		<Unit filename="Imported/LZMAEncoder.cc" />
+		<Unit filename="Imported/LZMAEncoder.h" />
+		<Unit filename="Imported/LenCoder.cc" />
+		<Unit filename="Imported/LenCoder.h" />
+		<Unit filename="Imported/LiteralCoder.cc" />
+		<Unit filename="Imported/LiteralCoder.h" />
+		<Unit filename="Imported/OutByte.cc" />
+		<Unit filename="Imported/OutByte.h" />
+		<Unit filename="Imported/Portable.h" />
+		<Unit filename="Imported/RCDefs.h" />
+		<Unit filename="Imported/RangeCoder.h" />
+		<Unit filename="Imported/WindowIn.cc" />
+		<Unit filename="Imported/WindowIn.h" />
+		<Unit filename="Imported/WindowOut.cc" />
+		<Unit filename="Imported/WindowOut.h" />
+		<Unit filename="compress.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="md5.cpp" />
+		<Unit filename="md5.h" />
+		<Unit filename="uncompress.cpp" />
+		<Unit filename="uncompress.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
