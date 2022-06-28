@@ -9,8 +9,24 @@
 #include "uncompress.h"
 
 int main(int argc, char** argv) {
-    //chdc::extractFromArchive("Script");
-    chdc::createArchive("Script");
+    if (argc != 3) {
+        std::cout << "Not enough argument" << std::endl;
+        std::cout << "[program] C/U [Archive name]";
+        return 0;
+    }
+
+    if (argv[1][0] != 'C' && argv[1][0] != 'V') {
+        std::cout << "Bad argument";
+        std::cout << "[program] C/U [Archive name]";
+        return 0;
+    }
+
+    switch (argv[1][0]) {
+case 'C' : chdc::createArchive(argv[2]);
+    break;
+case 'V' : chdc::extractFromArchive(argv[2]);
+    break;
+    }
     return 0;
 }
 

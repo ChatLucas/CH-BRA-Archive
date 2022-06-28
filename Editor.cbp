@@ -35,9 +35,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Linker>
-			<Add option="-lz" />
-			<Add option="`sdl2-config --cflags`" />
-			<Add option="`sdl2-config --libs`" />
+			<Add option="-lz -static" />
 		</Linker>
 		<Unit filename="Imported/7z.h" />
 		<Unit filename="Imported/7zdeflate.cc" />
