@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
         return 0;
     }
 
-    if (argv[1][0] != 'C' && argv[1][0] != 'V') {
+    if (argv[1][0] != 'C' && argv[1][0] != 'U') {
         std::cout << "Bad argument";
         std::cout << "[program] C/U [Archive name]";
         return 0;
