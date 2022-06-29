@@ -9,14 +9,20 @@
 #include "uncompress.h"
 
 int main(int argc, char** argv) {
-    if (argc != 3) {
-        std::cout << "Not enough argument" << std::endl;
-        std::cout << "[program] C/U [Archive name]";
-        return 0;
-    }
-
-    if (argv[1][0] != 'C' && argv[1][0] != 'U') {
-        std::cout << "Bad argument";
+    switch (argc) {
+case 3 : if (argv[1][0] != 'C' && argv[1][0] != 'U' && argv[1][0] != 'I') {
+            std::cout << "Bad argument" << std::endl;
+            std::cout << "[program] C/U/I [Archive name]";
+            return 0;
+        }
+        break;
+case 4 : if (argv[1][0] != 'E') {
+            std::cout << "Bad argument" << std::endl;
+            std::cout << "[program] E [Archive name] [File to extract]";
+            return 0;
+        }
+        break;
+default : std::cout << "Not enough argument" << std::endl;
         std::cout << "[program] C/U [Archive name]";
         return 0;
     }
@@ -24,8 +30,10 @@ int main(int argc, char** argv) {
     switch (argv[1][0]) {
 case 'C' : chdc::createArchive(argv[2]);
     break;
-case 'V' : chdc::extractFromArchive(argv[2]);
+case 'U' : chdc::extractFromArchive(argv[2]);
     break;
+case 'I' : break;
+case 'E' : break;
     }
     return 0;
 }
