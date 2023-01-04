@@ -7,7 +7,7 @@
 #include <direct.h>
 #include <dirent.h>
 
-#include "Imported/7z.h"
+#include "Imported/libs/7z_advancecomp/7z.h"
 #include "uncompress.h"
 #include "main.h"
 #include "md5.h"

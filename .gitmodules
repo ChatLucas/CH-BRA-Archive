@@ -1,0 +1,3 @@
+[submodule "Imported"]
+	path = Imported
+	url = https://github.com/mistydemeo/quickbms

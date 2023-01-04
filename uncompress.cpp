@@ -5,7 +5,7 @@
 
 #include <direct.h>
 
-#include "Imported/7z.h"
+#include "Imported/libs/7z_advancecomp/7z.h"
 #include "uncompress.h"
 
 int chdc::extractFromArchive(std::string name) {
